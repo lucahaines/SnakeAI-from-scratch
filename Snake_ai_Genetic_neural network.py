@@ -213,11 +213,6 @@ class GeneticAlgorithm:
         to get there. The current fitness equation comes from Chrispresso
         on YouTube but I will look to find a better fitness function
         """
-        
-        # if score < 0:
-        #     score = 0
-        # if steps < 0:
-        #     steps = 0
 
         exponential_reward = 2 ** score
         other_reward = (score ** 2.1) * 500
