@@ -173,7 +173,7 @@ class SnakeEnvironment:
         # Fruit distances in 8 directions
         fruit_distances = [self.distance_to_fruit(head, d) for d in directions]
         
-        # Current head direction as one-hot encoding
+        # Current head direction as one-hot
         head_direction = [
             1 if self.direction == up else 0,
             1 if self.direction == down else 0,
@@ -181,10 +181,9 @@ class SnakeEnvironment:
             1 if self.direction == right else 0
         ]
         
-        # Tail direction as one-hot encoding
+        # Tail direction as one-hot
         tail_direction = self.get_tail_direction()
-        
-        # Combine all inputs
+    
         return np.array(obstacle_distances + fruit_distances + \
                         head_direction + tail_direction, dtype=np.float32)
     
@@ -205,7 +204,6 @@ class SnakeEnvironment:
             self.game_over = True
             return
             
-        # Move snake
         self.snake.insert(0, new_head)
         
         # Check fruit collision
@@ -300,7 +298,7 @@ def play_manually():
             clock.tick(fps)
             
     except Exception as e:
-        print(f"Error during manual play: {e}")
+        print(e)
     finally:
         pygame.quit()
                     
