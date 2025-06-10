@@ -53,8 +53,8 @@ decay_rate = 0.99
 mutation_probability = 0.8
 
 # Constants for training loop
-hiddensize1 = 32
-hiddensize2 = 16
+hiddensize1 = 24
+hiddensize2 = 12
 outputsize = 4
 populationsize = 400
 generations = 250000
