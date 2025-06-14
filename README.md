@@ -11,7 +11,7 @@ is 24 neurons in the first hidden layer (hiddensize1 = 24) and 12 neurons in the
 layer (hiddensize2 = 12). To play snake manually, the user can run play_manually() in 
 snake.py.
 
-Video of Pea beating snake:
+Video of Pea beating snake (24, 24, 12, 4 topology):
 
 
 
