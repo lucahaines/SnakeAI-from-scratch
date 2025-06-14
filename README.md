@@ -1,6 +1,7 @@
 # SnakeAI-from-scratch
 
-Code of a genetic algorithm that modifies neural networks and learns to play snake
+Code of a genetic algorithm that modifies neural networks and learns to play the classic 
+game 'Snake'.
 
 Each neural network contains two hidden layers whose sizes can be modified by the user
 in Snake_ai_Genetic_neural_network.py. User can train a neural network and watch it play in
