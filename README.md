@@ -9,7 +9,14 @@ Snake_ai_Genetic_neural_network.py. Also, the user can test out my current best 
 play by running visualize_ai_performance("pea.pkl") in Snake_ai_Genetic_neural_network.py. 
 Pea has a weird strategy but he often gets quite far. Make sure the neural network topology 
 is 24 neurons in the first hidden layer (hiddensize1 = 24) and 12 neurons in the second hidden
-layer (hiddensize2 = 12). To play snake manually, the user can run play_manually() in 
+layer (hiddensize2 = 12). All the of the pickle files are ais that I trained seperately their
+topologies are as follows:
+
+- Booger: 24, 24, 12, 4
+- Pea: 24, 24, 12, 4
+- Allen: 24, 18, 9, 4
+
+To play snake manually, the user can run play_manually() in 
 snake.py.
 
 Video of Pea beating snake (24, 24, 12, 4 topology):
